@@ -1,0 +1,145 @@
+/* Сброс и базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* контейнер */
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: 500;
+  }
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  .navbar .btn-logout {
+    background: none;
+    border: none;
+    color: #c00;
+    cursor: pointer;
+    font: inherit;
+  }
+  
+  /* Карточка сообщения */
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Формы */
+  .form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+  }
+  .form h1 {
+    margin-bottom: 1.5rem;
+  }
+  .form .form-group {
+    margin-bottom: 1rem;
+  }
+  .form label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 500;
+  }
+  .form input,
+  .form textarea {
+    width: 100%;
+    padding: .75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+  }
+  .form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  .form button {
+    width: 100%;
+    padding: .75rem;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .form button:hover {
+    background: #0069d9;
+  }
+  .form button:disabled {
+    background: #aaa;
+    cursor: default;
+  }
+  
+  /* Список сообщений */
+  .msg-list {
+    list-style: none;
+    padding: 0;
+  }
+  .msg-list li {
+    margin-bottom: 1rem;
+  }
+  .msg-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+  }
+  .msg-header .from-to {
+    font-weight: 600;
+  }
+  .msg-header .date {
+    color: #666;
+    font-size: .9rem;
+  }
+  .msg-subject {
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+  }
+  .msg-body {
+    color: #444;
+  }
+  
+  /* Ссылки */
+  .link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .link:hover {
+    text-decoration: underline;
+  }
+  

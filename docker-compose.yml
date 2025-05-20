@@ -1,0 +1,20 @@
+# frontend/docker-compose.yml
+version: '3.8'
+
+services:
+  frontend:
+    # берём Dockerfile.dev рядом
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # монтируем код для hot-reload, но node_modules оставляем внутри
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - '5173:5173'
+    environment:
+      # для axios: вместо localhost внутри контейнера на host.docker.internal
+      - VITE_API_URL=http://host.docker.internal:8080/api/v1
+      - CHOKIDAR_USEPOLLING=true
+
